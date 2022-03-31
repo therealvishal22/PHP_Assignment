@@ -124,28 +124,7 @@
                 }
             });	
 			
-			// $(document).ready(function(){
-			// 		$("#ag").blur(function(){
-			// 			agNameFlag=false;
-			// 		$("#agValidation").empty();
-			// 		if($(this).val()=="") 
-			// 		{
-			// 			$("#agValidation").html("(*) age required..!!");
-						
-			// 		}
-			// 		else{
-			// 			if(!$(this).val().match($AgeRegEx)) 
-			// 			{
-			// 				$("#agValidation").html("(*) Invalid age..!!");
-			// 			}
-			// 			else{
-			// 				agNameFlag=true;
-			// 			}
-			// 		}
-					
-			// 	})
-			// });
-
+			
 				$("#cn").blur(function(){
 					TxtContactNoFlag=false;
 					$("#cnValidation").empty();
@@ -281,6 +260,11 @@
 			/* .abc{background-image: url("img1.jpg");background-repeat: repeat; height: 100%;} */
 		small{font-size: 20px; }
 		.abc{background-color: antiquewhite;}
+		#fileid
+		{
+			font-weight: bold;
+			
+		}
 		</style>
 		
     </head>
@@ -349,6 +333,10 @@
 						<small id="agValidation" class="text-danger"></small>
 					
 				</div>
+					<div id="fileid">
+						Select File <br>
+						<input type="file" name="fileToUpload" id="fileToUpload">
+					</div>
 					<div class="form-group">
 						<b>Email</b>
 						<div class="input-group">

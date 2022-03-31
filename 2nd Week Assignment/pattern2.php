@@ -1,23 +1,16 @@
-<?php
 
-function p2($n)
-{
-    for ($i = 1; $i <= $n; $i++) {
-        for ($j = 1; $j <= $n; $j++) {
-            if($j<=($n-$i)){
-                echo " "." ";
-                  
-            }else {
-                echo "* ";
-            }
-              
+<?php
+    // right triangle pattern
+    $size = 5;
+    for($i = 0; $i < $size; $i++) {
+        // print spaces
+        for($j = 1; $j < $size - $i; $j++) {
+            echo "&nbsp;&nbsp;";
         }
-        echo PHP_EOL;
-    } 
-}
-  
-    // Driver Code
-    $n = 5;
-    p2($n);
-  
+        // print stars
+        for($k = 0; $k <= $i; $k++) {
+            echo "*";
+        }
+        echo "<br>";
+    }
 ?>
